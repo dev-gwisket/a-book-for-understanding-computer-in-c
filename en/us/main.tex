@@ -6,9 +6,19 @@
 
 \usepackage[b5paper]{geometry}
 \usepackage{indentfirst}
+\usepackage{titletoc}
+
+\titlecontents*{chapter}
+  [0pt]
+  {}
+  {\bfseries\chaptername\ \thecontentslabel\quad}
+  {}
+  {\bfseries\hfill\contentspage}
 
 \begin{document}
   \maketitle
+
+  \tableofcontents
 
   \include{0-preface/main}
 \end{document}
